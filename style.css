@@ -1,70 +1,96 @@
-/* Fond général en noir */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    height: 100vh;
-    background-color: black; /* FOND NOIR */
-    color: white; /* Texte blanc pour contraste */
     margin: 0;
-    display: grid;
-    place-items: center; /* Centre tout le contenu */
-}
-main{
-    background-color: black;
-}
-
-/* Conteneur principal */
-.container {
-    padding: 20px;
-    max-width: 400px;
-    background: #0A1931; /* Bleu foncé */
-    color: white; /* Texte blanc */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-    display: inline-block;
-}
-
-/* Style des étoiles */
-.stars {
-    font-size: 2rem;
-    cursor: pointer;
-    display: inline-block;
-    margin: 10px 0;
-}
-
-.star {
-    color: gray; /* Par défaut */
-    font-size: 30px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    display: inline-block;
-    padding: 5px;
-}
-
-/* Effet de survol et sélection */
-.star:hover, .star.selected {
-    color: orange; /* Étoiles oranges */
-}
-
-/* Style du bouton */
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: orange; /* Bouton orange */
-    color: black; /* Texte noir pour contraste */
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s
-}
-
-button:hover {
-    background-color: darkorange; /* Orange foncé au survol */
-}
-.bi-star-fill{
-    color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    }
+    
+    .card-rating {
+    background-color: #1e1e2f;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    
+    .star-icon {
     display: flex;
     justify-content: flex-start;
-}
-
+    margin-bottom: 1rem;
+    }
+    
+    .star-icon i {
+    color: orange;
+    font-size: 24px;
+    }
+    
+    .card-rating h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .card-rating p {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-bottom: 20px;
+    }
+    
+    .rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    }
+    
+        .rating .star {
+    background-color: #262638;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    .rating .star.selected {
+    background-color: orange;
+    color: black;
+    }
+    
+    #submit {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    
+    #submit:hover {
+    background-color: darkorange;
+    }
+    
+    #message {
+    margin-top: 15px;
+    font-weight: bold;
+    }
+    
+    .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: gray;
+        text-align: center;
+        width: 100%;
+    }
+    
