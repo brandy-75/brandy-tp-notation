@@ -1,0 +1,70 @@
+/* Fond général en noir */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    background-color: black; /* FOND NOIR */
+    color: white; /* Texte blanc pour contraste */
+    margin: 0;
+    display: grid;
+    place-items: center; /* Centre tout le contenu */
+}
+main{
+    background-color: black;
+}
+
+/* Conteneur principal */
+.container {
+    padding: 20px;
+    max-width: 400px;
+    background: #0A1931; /* Bleu foncé */
+    color: white; /* Texte blanc */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    display: inline-block;
+}
+
+/* Style des étoiles */
+.stars {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.star {
+    color: gray; /* Par défaut */
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Effet de survol et sélection */
+.star:hover, .star.selected {
+    color: orange; /* Étoiles oranges */
+}
+
+/* Style du bouton */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: orange; /* Bouton orange */
+    color: black; /* Texte noir pour contraste */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s
+}
+
+button:hover {
+    background-color: darkorange; /* Orange foncé au survol */
+}
+.bi-star-fill{
+    color: orange;
+    display: flex;
+    justify-content: flex-start;
+}
+
